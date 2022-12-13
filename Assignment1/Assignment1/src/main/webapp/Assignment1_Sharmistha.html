@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Registration Form</title>
+<style>
+body {
+	background-color: lightgrey;
+}
+
+h3 {
+	background-color: lightblue;
+}
+
+h1 {
+	text-align: center;
+	background-color: lightblue;
+}
+
+h2 {
+	text-align: center;
+	background-color: lightblue;
+}
+
+div {
+	box-sizing: border-box;
+	background-color: lightblue;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 50px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div1 {
+	box-sizing: border-box;
+	background-color: lightblue;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+	float: left;
+	width: 33%;
+	padding: 10px;
+	height: 50px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+</style>
+</head>
+<body>
+	<fieldset style="border: 1px black solid">
+
+
+		<form action="Assignment1_Sharmistha" method="post">
+			<h1>User Registration</h1>
+			<h2>Register here for music class</h2>
+			<div class="row">
+				<div class="column">
+					<label for="firstname">FirstName:</label><br> <input
+						type="text" name="firstname" id="firstname">
+				</div>
+				<div class="column">
+					<label for="lastname">LastName:</label><br> <input type="text"
+						name="lastname" id="lastname">
+				</div>
+				<hr>
+				<div class="column">
+					<label for="email">EmailAddress:</label><br> <input
+						type="text" name="email" id="email">
+				</div>
+
+				<div class="column">
+					<label for="zipcode">Zip Code</label><br> <input type="text"
+						name="zipcode" id="zipcode">
+				</div>
+				<hr>
+				<div class="column">
+					<label for="username">User Name</label><br> <input type="text"
+						name="username" id="username"><br> <br>
+				</div>
+				<div class="column">
+					<br> <br>
+				</div>
+				<hr>
+				<div class="column">
+					<label for="password">Password</label><br> <input type="text"
+						name="password" id="password">
+				</div>
+				<div class="column">
+					<label for="confirmpassword">Confirm Password</label><br> <input
+						type="text" name="confirmpassword" id="confirmpassword">
+				</div>
+				<hr>
+				<div class="column">
+					<h3>What music are you interested in?</h3>
+
+				</div>
+				
+			</div>
+			<div1 class="row"> 
+			<div1 class="column"> 
+			<label for="genre"></label> 
+			<input	type="checkbox" id="rock" name="genre" value="rock"> rock </input>
+			<input type="checkbox" id="pop" name="genre"	value="pop"> pop </input>
+			<input type="checkbox" id="blue" name="genre" value="blue"> blue </input>
+			</div1> <div1 class="column"> 
+			</div1> 
+			<div1 class="column"> 
+			<label for="genre"></label> 
+			<input type="checkbox" id="country" name="genre" value="country"> country </input>
+		    <input type="checkbox" id="jazz" name="genre" value="jazz"> jazz </input>
+			<input type="checkbox" id="bluegrass" name="genre" value="bluegrass"> bluegrass </input>
+			
+			</div1> <div1 class="column"> </div1>
+			<hr>
+
+			<div1 class="column">
+			<h3>Would you like to receive e-mail notification on our special
+				rate</h3>
+			</div1> <div1 class="column">
+			<h3>notification on our special rate</h3>
+			</div1> <div1 class="column"> 
+			<label for="notify"></label> 
+				<input type="radio"	name="notify" value = "yes"> yes	</input>		
+				<input type="radio" name="notify" value = "no"> no</input>
+			
+			</div1> 
+			<div1 class="column"> </div1> </div1>
+	</fieldset>
+
+	<input type="submit" value="Submit">
+		<form action = "Assignment1_Sharmistha" method ="get">
+                    <button type="reset" class="btn-warning btn" name="reset"
+                        value="reset" style="" id="reset">Reset</button>
+                </form>
+		
+	</form>
+</body>
+</html>
